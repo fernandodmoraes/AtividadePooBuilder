@@ -1,0 +1,49 @@
+ckage fernandodmoraes.com.guithub.AtividadePooBuilder;
+
+public class Acessorios {
+	
+	private String teclado;
+	private String mouse;
+	private String mochila;
+	private String hdExterno;
+	private String caboHdmi;
+	
+	public Acessorios(String teclado, String mouse, String mochila, String hdExterno, String caboHdmi) {
+		this.teclado = teclado;
+		this.mouse = mouse;
+		this.mochila = mochila;
+		this.hdExterno = hdExterno;
+		this.caboHdmi = caboHdmi;
+	}
+	public String getTeclado() {
+		return teclado;
+	}
+	public void setTeclado(String teclado) {
+		this.teclado = teclado;
+	}
+	public String getMouse() {
+		return mouse;
+	}
+	public void setMouse(String mouse) {
+		this.mouse = mouse;
+	}
+	public String getMochila() {
+		return mochila;
+	}
+	public void setMochila(String mochila) {
+		this.mochila = mochila;
+	}
+	public String getHdExterno() {
+		return hdExterno;
+	}
+	public void setHdExterno(String hdExterno) {
+		this.hdExterno = hdExterno;
+	}
+	public String getCaboHdmi() {
+		return caboHdmi;
+	}
+	public void setCaboHdmi(String caboHdmi) {
+		this.caboHdmi = caboHdmi;
+	}
+	
+}
