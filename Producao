@@ -1,0 +1,120 @@
+package fernandodmoraes.com.guithub.AtividadePooBuilder;
+
+import java.util.Date;
+
+public class Producao {
+	private String produtoTipo;
+	private String produtoNome;
+	private Date dtFabProduto; 
+	private String codFabProduto;
+	private Integer produtoVolt;
+	private String produtoCor;
+	
+	private Acessorios acessorios;
+	private Sistema sistema;
+	
+	public Producao(String produtoTipo, String produtoNome, Date dtFabProduto, 
+			String codFabProduto, Integer produtoVolt, String produtoCor, Acessorios acessorios, Sistema sistema) {
+		
+		this.produtoTipo = produtoTipo;
+		this.produtoNome = produtoNome;
+		this.dtFabProduto = dtFabProduto;
+		this.codFabProduto = codFabProduto;
+		this.produtoVolt = produtoVolt;
+		this.produtoCor = produtoCor;
+	}
+
+	public String getProdutoTipo() {
+		return produtoTipo;
+	}
+	public void setProdutoTipo(String produtoTipo) {
+		this.produtoTipo = produtoTipo;
+	}
+	public String getProdutoNome() {
+		return produtoNome;
+	}
+	public void setProdutoNome(String produtoNome) {
+		this.produtoNome = produtoNome;
+	}
+	public Date getDtFabProduto() {
+		return dtFabProduto;
+	}
+	public void setDtFabProduto(Date dtFabProduto) {
+		this.dtFabProduto = dtFabProduto;
+	}
+	public String getCodFabProduto() {
+		return codFabProduto;
+	}
+	public void setCodFabProduto(String codFabProduto) {
+		this.codFabProduto = codFabProduto;
+	}
+	public Integer getProdutoVolt() {
+		return produtoVolt;
+	}
+	public void setProdutoVolt(Integer produtoVolt) {
+		this.produtoVolt = produtoVolt;
+	}
+	public String getProdutoCor() {
+		return produtoCor;
+	}
+	public void setProdutoCor(String tipoTeclado) {
+		this.produtoCor = tipoTeclado;
+	}
+	public Acessorios getAcessorios() {
+		return acessorios;
+	}
+	public void setAcessorios(Acessorios acessorios) {
+		this.acessorios = acessorios;
+	}
+	public Sistema getSistema() {
+		return sistema;
+	}
+	public void setSistema(Sistema sistema) {
+		this.sistema = sistema;
+	}
+
+	public void imprimiProducao() {
+		System.out.println(this.getProdutoTipo());
+		System.out.println(this.getProdutoNome());
+		System.out.println(this.getDtFabProduto());
+		System.out.println(this.getCodFabProduto());
+		System.out.println(this.getProdutoVolt());
+		System.out.println(this.getProdutoCor());
+		System.out.println(this.getSistema().getSisOperacional());
+		System.out.println(this.getSistema().getProcessador());
+		System.out.println(this.getSistema().getMemoria());
+		System.out.println(this.getSistema().getArmazenamento());
+		System.out.println(this.getSistema().getPlacaVideo());
+		System.out.println(this.getSistema().getTelaTamanho());
+		System.out.println(this.getAcessorios().getTeclado());
+		System.out.println(this.getAcessorios().getMouse());
+		System.out.println(this.getAcessorios().getMochila());
+		System.out.println(this.getAcessorios().getHdExterno());
+		System.out.println(this.getAcessorios().getCaboHdmi());
+	}
+	
+	@Override
+	public String toString() {
+	StringBuilder sb = new StringBuilder();
+	sb.append("Tipo do Produto: " + getProdutoTipo() + "\n");
+	sb.append("Nome do Produto: " + getProdutoNome() + "\n");
+	sb.append("Data de Fabricação do Produto: " + getDtFabProduto() + "\n");
+	sb.append("Código de Fabricação do Produto: " + getCodFabProduto() + "\n");
+	sb.append("Voltagem do Produto: " + getProdutoVolt() + "\n");
+	sb.append("Cor: " + getProdutoCor() + "\n");
+	sb.append("Sistema Operacional: " + getSistema().getSisOperacional() + "\n");
+	sb.append("Processador: " + getSistema().getProcessador() + "\n");
+	sb.append("Mémoria RAM: " + getSistema().getMemoria() + "\n");
+	sb.append("Armazenamento SSD: " + getSistema().getArmazenamento() + "\n");
+	sb.append("Placa de Video: " + getSistema().getPlacaVideo() + "\n");
+	sb.append("Tela (em polegadas): " + getSistema().getTelaTamanho() + "\n");
+	sb.append("Teclado Mecanico sem fio: " + getAcessorios().getTeclado() + "\n");
+	sb.append("Mouse sem fio: " + getAcessorios().getMouse() + "\n");
+	sb.append("Mochila para Notebook: " + getAcessorios().getMochila() + "\n");
+	sb.append("HD Externo SSD 1T: " + getAcessorios().getHdExterno() + "\n");
+	sb.append("Cabo HDMI auxiliar: " + getAcessorios().getCaboHdmi() + "\n");
+	sb.append("\n\n");
+
+		return sb.toString();
+	}		
+}
