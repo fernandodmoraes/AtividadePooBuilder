@@ -1,0 +1,50 @@
+package fernandodmoraes.com.guithub.Interfaces;
+
+import java.util.Date;
+
+import fernandodmoraes.com.guithub.AtividadePooBuilder.Acessorios;
+import fernandodmoraes.com.guithub.AtividadePooBuilder.Sistema;
+
+public abstract class ProducaoBuilder implements IProducaoBuilder {
+	private String produtoTipo;
+	private String produtoNome;
+	private Date dtFabProduto; 
+	private String codFabProduto;
+	private Integer produtoVolt;
+	private String produtoCor;
+	
+	private Acessorios acessorios;
+	private Sistema sistema;
+	
+	public void setProdutoTipo(String produtoTipo) {
+		this.produtoTipo = produtoTipo;
+	}
+	public void setProdutoNome(String produtoNome) {
+		this.produtoNome = produtoNome;
+	}
+	public void setDtFabProduto(Date dtFabProduto) {
+		this.dtFabProduto = dtFabProduto;
+	}
+	public void setCodFabProduto(String codFabProduto) {
+		this.codFabProduto = codFabProduto;
+	}
+	public void setProdutoVolt(Integer produtoVolt) {
+		this.produtoVolt = produtoVolt;
+	}
+	public void setProdutoCor(String produtoCor) {
+		this.produtoCor = produtoCor;
+	}
+	public void setAcessorios(Acessorios acessorios) {
+		this.acessorios = acessorios;
+	}
+	public void setSistema(Sistema sistema) {
+		this.sistema = sistema;
+	}
+	@Override
+	public void setdtFabProduto(Date dtFabProduto) {
+	}
+	@Override
+	public void setcodFabProduto(String codFabProduto) {
+	}
+
+}
