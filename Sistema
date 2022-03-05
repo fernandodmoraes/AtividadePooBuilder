@@ -1,0 +1,59 @@
+package fernandodmoraes.com.guithub.AtividadePooBuilder;
+
+public class Sistema {
+
+	private String sisOperacional;
+	private String processador;
+	private String memoria;
+	private Integer armazenamento;
+	private String placaVideo;
+	private Integer telaTamanho;
+	
+	public Sistema(String sisOperacional, String processador, String memoria, Integer armazenamento, String placaVideo,
+			Integer telaTamanho) {
+		this.sisOperacional = sisOperacional;
+		this.processador = processador;
+		this.memoria = memoria;
+		this.armazenamento = armazenamento;
+		this.placaVideo = placaVideo;
+		this.telaTamanho = telaTamanho;
+	}
+
+	public String getSisOperacional() {
+		return sisOperacional;
+	}
+	public void setSisOperacional(String sisOperacional) {
+		this.sisOperacional = sisOperacional;
+	}
+	public String getProcessador() {
+		return processador;
+	}
+	public void setProcessador(String processador) {
+		this.processador = processador;
+	}
+	public String getMemoria() {
+		return memoria;
+	}
+	public void setMemoria(String memoria) {
+		this.memoria = memoria;
+	}
+	public Integer getArmazenamento() {
+		return armazenamento;
+	}
+	public void setArmazenamento(Integer armazenamento) {
+		this.armazenamento = armazenamento;
+	}
+	public String getPlacaVideo() {
+		return placaVideo;
+	}
+	public void setPlacaVideo(String placaVideo) {
+		this.placaVideo = placaVideo;
+	}
+	public Integer getTelaTamanho() {
+		return telaTamanho;
+	}
+	public void setTelaTamanho(Integer telaTamanho) {
+		this.telaTamanho = telaTamanho;
+	}
+	
+}
