@@ -1,0 +1,19 @@
+package fernandodmoraes.com.guithub.Interfaces;
+
+import java.util.Date;
+
+import fernandodmoraes.com.guithub.AtividadePooBuilder.Acessorios;
+import fernandodmoraes.com.guithub.AtividadePooBuilder.Sistema;
+
+public interface IProducaoBuilder {
+	
+	public void setProdutoTipo(String produtoTipo);
+	public void setProdutoNome(String produtoNome);
+	public void setdtFabProduto(Date dtFabProduto);
+	public void setcodFabProduto(String codFabProduto);
+	public void setProdutoVolt(Integer produtoVolt);
+	public void setProdutoCor(String produtoCor);
+	public void setSistema(Sistema sistema);
+	public void setAcessorios(Acessorios acessorios);
+	
+}
