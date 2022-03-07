@@ -1,0 +1,25 @@
+package fernandodmoraes.com.guithub.AtividadePooBuilder;
+
+import java.util.Date;
+import fernandodmoraes.com.guithub.Interfaces.ProducaoBuilder;
+
+public class NovoProduto {
+
+	public static void main(String[] args) {
+		Sistema sistema = new Sistema ("Windows 11 Pro", "Intel Core I5", "8GB", 256, "NVIDIA GeForce MX110", 15);
+		Acessorios acessorios = new Acessorios ("NÂO", "SIM", "NÃO", "NÃO", "SIM");
+		Producao producao = new Producao ("Notebook", "Idealpad S145J", new Date(), "14575242/5245", 110, "Prata", acessorios, sistema);
+		
+		ProducaoBuilder proBuilder = new ProducaoBuilder();
+		proBuilder.setProdutoTipo("");
+		proBuilder.setProdutoNome("");
+		proBuilder.setDtFabProduto(new Date());
+		proBuilder.setCodFabProduto("");
+		proBuilder.setProdutoCor("");
+		proBuilder.setAcessorios(acessorios);
+		proBuilder.setSistema(sistema);
+		Producao pro = proBuilder.gera();
+		
+		System.out.println(producao);
+	}
+}
